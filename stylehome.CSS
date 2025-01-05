@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(-45deg, #84ebd6,#c1f5f8,#ebebe7,#faf9f7);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.logo img {
+    height: 130px; /* Atur tinggi logo sesuai kebutuhan */
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 80px;
+}
+
+.nav-links a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-links a:hover {
+    background-color: #eff7f6;
+    transform: scale(1.1); /* Memperbesar sedikit saat hover */
+    text-shadow: 0 2px 5px rgba(225, 227, 229, 0.5); /* Bayangan teks saat hover */
+}
+section{
+    padding: 2%;
+}
+.home{
+     display: flex;
+     align-items: center;
+     min-height: 100vh;
+     background:url(Teks\ paragraf\ Anda\ \(1\).png) no-repeat;
+     background-size: cover;
+     background-position: 100% 100%;
+}
+.home .content{
+     max-width: 50rem;
+}
+.home .content h3{
+    font-size: 1rem;
+    color: #170303;
+}
+.home .content span{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    color: rgb(15, 15, 16);
+    padding: 1rem 0;
+    line-height: 1;
+    font-size:xx-large;
+}
+.home .content p{
+    font-size: 1rem;
+    color: #999; 
+    padding: 1rem 0;
+    line-height: 1;
+}
+.logo-container {
+    display: flex;
+    align-items: flex-end; /* Mengatur elemen di bagian bawah */
+    justify-content: center; /* Center the items horizontally */
+    gap: 50px; /* Jarak antar elemen */
+    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika perlu */
+}
+
+.logo-container div.logo {
+    width: 100px; /* Ukuran logo */
+    height: 100px; /* Ukuran logo */
+    background-size: contain; /* Sesuaikan ukuran gambar dalam div */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+}
+
+.logo-container img {
+    width: 80px; /* Ukuran gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Mengatur gambar sebagai blok agar teks bisa berada di bawah */
+    margin: 0 auto; /* Mengatur gambar agar berada di tengah */
+}
+
+.logo-container p {
+    text-align: center; /* Mengatur teks berada di tengah */
+    margin-top: 10px; /* Jarak antara gambar dan teks */
+}
+.logo-item:hover {
+    transform: scale(1.1); /* Zoom in saat hover */
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Space between product cards */
+}
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for product cards */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out elements evenly */
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+.button-container {
+    text-align: center; /* Mengatur tombol agar berada di tengah */
+    margin: 20px 0; /* Jarak atas dan bawah untuk tombol */
+}
+.action-button {
+    padding: 10px 20px; /* Jarak dalam tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran teks */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+.iot-technology-info {
+    background-color: #f6f7f8; /* Warna latar belakang yang lebih cerah */
+    padding: 20px; /* Jarak dalam section */
+    margin: 20px; /* Jarak luar section */
+    border-radius: 10px; /* Sudut melengkung yang lebih halus */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih halus untuk efek kedalaman */
+}
+
+.content-wrapper {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+.iot-image {
+    max-width:40%; /* Ukuran maksimum gambar */
+    height: auto; /* Memastikan proporsi gambar tetap */
+    border-radius: 8px; /* Sudut melengkung untuk gambar */
+    margin-right: 18px; /* Jarak antara gambar dan teks */
+}
+
+.text-content {
+    flex: 1; /* Memungkinkan teks untuk mengambil ruang yang tersisa */
+}
+
+.iot-technology-info h2 {
+    color: #141515; /* Warna teks untuk judul yang lebih kontras */
+    margin-bottom: 15px; /* Jarak bawah judul */
+}
+
+.iot-technology-info p {
+    color: #333; /* Warna teks untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris untuk keterbacaan yang lebih baik */
+}
+
+.iot-technology-info p:last-child {
+    margin-bottom: 0; /* Menghilangkan margin bawah pada paragraf terakhir */
+}
+#contact {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Membuat lebar section penuh */
+    margin: 0; /* Menghilangkan margin agar menyentuh kiri dan kanan */
+}
+
+#contact h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Centering the form container */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 10px;
+    width: 80%; /* Full width for form groups */
+    max-width: 400px; /* Set a maximum width */
+}
+
+/* Style for labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Style for input fields */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus styles */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF; /* Border color change on focus */
+}
+
+/* Style for submit button */
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above the button */
+    display: block; /* Ensure it's treated as a block element */
+    width: 100%; /* Full width */
+    max-width: 150px; /* Limit the width of the button */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-info {
+    text-align: center; /* Menyusun teks di tengah */
+    margin-bottom: 20px; /* Jarak bawah untuk elemen ini */
+}
+
+.contact-image {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Menyusun gambar di tengah */
+    align-items: center; /* Menjaga gambar tetap sejajar secara vertikal */
+    margin-top: 20px; /* Jarak atas dari elemen di atasnya */
+}
+
+.contact-image a {
+    margin: 0 10px; /* Jarak horizontal antar ikon */
+}
+
+.contact-image img {
+    max-width: 100px; /* Ukuran maksimum untuk ikon */
+    height: auto; 
+}
+.contact-image a:hover img {
+    transform: scale(1.1); /* Membesarkan gambar saat hover */
+    opacity: 0.8; /* Mengubah opasitas saat hover */
+}
+footer {
+    background: linear-gradient(-45deg, #84ebd6,#c1f5f8,#ebebe7,#faf9f7);
+    text-align: center; /* Menyusun teks di tengah */
+    margin-top: 20px; /* Jarak atas dari elemen di atasnya */
+    font-size: 14px; /* Ukuran font */
+    color: #555; /* Warna teks */
+}
+    
