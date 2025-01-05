@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(-45deg, #84ebd6,#c1f5f8,#ebebe7,#faf9f7);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.logo img {
+    height: 130px; 
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 80px;
+}
+
+.nav-links a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+.nav-links a:hover {
+    background-color: #eff7f6;
+    transform: scale(1.1); /* Memperbesar sedikit saat hover */
+    text-shadow: 0 2px 5px rgba(225, 227, 229, 0.5); /* Bayangan teks saat hover */
+}
+h4{
+    text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.video-section {
+    position: relative; /* Memungkinkan konten ditumpuk di atas video */
+    overflow: hidden; /* Menghindari elemen keluar dari batas */
+    width: 100%; /* Lebar penuh */
+    height: auto; /* Tinggi otomatis sesuai konten */
+}
+
+.responsive-video {
+    width: 100%; /* Video memenuhi lebar section */
+    height: auto; /* Tinggi otomatis untuk menjaga aspek rasio */
+    display: block; /* Menghindari jarak di bawah video */
+}
+
+.video-section::after {
+    content: ""; /* Menambahkan konten kosong */
+    display: block;
+    padding-bottom: 55.25%; /* Rasio 16:9 (56.25% dari lebar) */
+}
+
+.video-section video {
+    position: absolute; /* Memposisikan video dengan absolut */
+    top: 0; /* Menempatkan video di bagian atas */
+    left: 0; /* Menempatkan video di bagian kiri */
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    object-fit: cover; /* Memastikan video menutupi area tanpa distorsi */
+}
+
+.keunggulan-section {
+    background-color: #f9f9f9; /* Warna latar belakang */
+    padding: 50px 20px; /* Ruang di atas dan bawah */
+    text-align: center;
+}
+
+.keunggulan-section h2 {
+    font-size: 2.5rem; /* Ukuran font untuk judul */
+    margin-bottom: 30px; /* Jarak bawah judul */
+}
+
+.keunggulan-container {
+    display: flex;
+    flex-wrap: wrap; /* Membuat kolom responsif */
+    justify-content: center; /* Tengah horizontal */
+}
+
+.keunggulan-card {
+    background-color: #fff; /* Warna latar belakang kartu */
+    border: 1px solid #ddd; /* Garis tepi */
+    border-radius: 8px; /* Sudut melingkar */
+    padding: 20px; /* Ruang di dalam kartu */
+    margin: 15px; /* Jarak antar kartu */
+    width: 250px; /* Lebar tetap */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk kedalaman */
+    text-align: left; /* Rata kiri untuk teks */
+}
+
+.keunggulan-img {
+    width: 100%; /* Lebar penuh kartu */
+    height: auto; /* Tinggi otomatis agar proporsional */
+    border-radius: 5px; /* Sudut melingkar pada gambar */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+}
+.keunggulan-card h3 {
+    text-align: center;
+    font-size: 1.5rem; /* Ukuran font untuk subjudul */
+    margin-bottom: 15px; /* Jarak bawah subjudul */
+}
+
+.keunggulan-card p {
+    text-align: center;
+    font-size: 1rem; /* Ukuran font untuk deskripsi */
+    color: #666; /* Warna teks */
+}
+.download-section {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    padding: 40px; /* Jarak dalam section */
+    background-color: #f9f9f9; /* Latar belakang */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.download-section h2 {
+    font-size: 2em; /* Ukuran font untuk judul */
+    margin-bottom: 10px; /* Margin bawah untuk jarak */
+}
+
+.download-section p {
+    font-size: 1.2em; /* Ukuran font untuk paragraf */
+    margin-bottom: 20px; /* Margin bawah untuk jarak */
+}
+
+.app-links {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Memusatkan ikon secara horizontal */
+    align-items: center; /* Menjaga ikon sejajar secara vertikal */
+    gap: 20px; /* Jarak antara ikon */
+    margin-top: 20px; /* Jarak atas untuk memberikan ruang dari elemen di atas */
+}
+.app-links a:hover img {
+    transform: scale(1.1); 
+    opacity: 0.8;
+}
+.app-icon {
+    width: 150px; /* Lebar ikon, sesuaikan sesuai kebutuhan */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+}
+
+.features-list {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.features-list li {
+    font-size: 1em; /* Ukuran font untuk daftar fitur */
+    margin: 5px 0; /* Margin untuk jarak antar fitur */
+}

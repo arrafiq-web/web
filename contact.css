@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(-45deg, #84ebd6,#c1f5f8,#ebebe7,#faf9f7);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.logo img {
+    height: 130px; /* Atur tinggi logo sesuai kebutuhan */
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 80px;
+}
+
+.nav-links a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+.nav-links a:hover {
+    background-color: #eff7f6;
+    transform: scale(1.1); /* Memperbesar sedikit saat hover */
+    text-shadow: 0 2px 5px rgba(225, 227, 229, 0.5); /* Bayangan teks saat hover */
+}
+#contact {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Membuat lebar section penuh */
+    margin: 0; /* Menghilangkan margin agar menyentuh kiri dan kanan */
+}
+
+#contact h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contact p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Centering the form container */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 10px;
+    width: 80%; /* Full width for form groups */
+    max-width: 400px; /* Set a maximum width */
+}
+
+/* Style for labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Style for input fields */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus styles */
+.form-group input:focus,
+.form-group textarea:focus {
+    background: linear-gradient(-45deg, #63bde6,#c1f5f8,#ebebe7,#faf9f7);
+    border-color: #181919; /* Border color change on focus */
+}
+
+/* Style for submit button */
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above the button */
+    display: block; /* Ensure it's treated as a block element */
+    width: 100%; /* Full width */
+    max-width: 150px; /* Limit the width of the button */
+}
+
+.submit-button:hover {
+    background-color: #e8edec; /* Darker blue on hover */
+}
+
+.contact-info {
+    text-align: center; /* Menyusun teks di tengah */
+    margin-bottom: 20px; /* Jarak bawah untuk elemen ini */
+}
+
+.contact-image {
+    background: linear-gradient(-45deg, #84ebd6,#c1f5f8,#ebebe7,#faf9f7);
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Menyusun gambar di tengah */
+    align-items: center; /* Menjaga gambar tetap sejajar secara vertikal */
+    margin-top: 20px; /* Jarak atas dari elemen di atasnya */
+}
+
+.contact-image a {
+    margin: 0 10px; /* Jarak horizontal antar ikon */
+}
+
+.contact-image img {
+    max-width: 100px; /* Ukuran maksimum untuk ikon */
+    height: auto; 
+}
+.contact-image a:hover img {
+    transform: scale(1.1); /* Membesarkan gambar saat hover */
+    opacity: 0.8; /* Mengubah opasitas saat hover */
+}
+footer {
+    background: linear-gradient(-45deg, #84ebd6,#c1f5f8,#ebebe7,#faf9f7);
+    text-align: center; /* Menyusun teks di tengah */
+    margin-top: 20px; /* Jarak atas dari elemen di atasnya */
+    font-size: 10px; /* Ukuran font */
+    color: #555; /* Warna teks */
+}
